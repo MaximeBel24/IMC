@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calcul IMC</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcul IMC</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <h1>Calcul de votre IMC</h1>
+      <div class="form">
+        <form id="imcForm">
+            <div>
+                <label for="size">Taille (en cm)</label>
+                <input type="text" name="size" id="size" placeholder=" exemple : 175" required>
+            </div>
+
+            <div>
+                <label for="weight">Poids (en kg)</label>
+                <input type="text" name="weight" id="weight" placeholder=" exemple : 75" required>
+            </div>
+
+            <input type="submit" class="btn" value="Calculer">
+        </form>
+      </div>
+
+      <div id="result" class="result">
+
+      </div>
+
+      <div class="tab">
+        <h2>Interprétation de l'indice de masse corporalle</h2>
+        <table>
+            <tr>
+                <th>- de 16.5</th>
+                <td>famine</td>
+            </tr>
+            <tr>
+                <th>16.5 à 18.5</th>
+                <td>maigreur</td>
+            </tr>
+            <tr>
+                <th>18.5 à 25</th>
+                <td>corpulence normale</td>
+            </tr>
+            <tr>
+                <th>25 à 30</th>
+                <td>surpoids</td>
+            </tr>
+            <tr>
+                <th>30 à 35</th>
+                <td>obésité modérée</td>
+            </tr>
+            <tr>
+                <th>35 à 40</th>
+                <td>obésité sévère</td>
+            </tr>
+            <tr>
+                <th>+ de 40</th>
+                <td>obésité morbide ou massive</td>
+            </tr>
+        </table>
+      </div>
+    </section>
         
-    </body>
+  </body>
 </html>
